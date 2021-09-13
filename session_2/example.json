@@ -1,0 +1,101 @@
+{
+ "local_pe": "ASR-9006-B",
+ "number_vrf": 2,
+ "number_services": 9,
+ "vrf": [
+  {
+   "vrf_name": "default",
+   "number_services": 9,
+   "number_interfaces": 5,
+   "enable_remote_pe": null,
+   "remote_pe": "",
+   "interfaces": [
+    {
+     "interface_name": "Te0/1/0/14",
+     "number_services": 2,
+     "services": [
+      {
+       "serviceIp": "10.1.12.1",
+       "serviceMac": "6c9c.ed6e.746a"
+      },
+      {
+       "serviceIp": "10.1.12.2",
+       "serviceMac": "a80c.0d59.46bc"
+      }
+     ]
+    },
+    {
+     "interface_name": "Te0/1/0/13",
+     "number_services": 2,
+     "services": [
+      {
+       "serviceIp": "10.1.13.1",
+       "serviceMac": "6c9c.ed6e.7469"
+      },
+      {
+       "serviceIp": "10.1.13.3",
+       "serviceMac": "78ba.f95d.77c7"
+      }
+     ]
+    },
+    {
+     "interface_name": "Te0/1/0/23.40",
+     "number_services": 2,
+     "services": [
+      {
+       "serviceIp": "40.40.1.1",
+       "serviceMac": "6c9c.ed6e.7473"
+      },
+      {
+       "serviceIp": "40.40.1.2",
+       "serviceMac": "000a.b83b.2102"
+      }
+     ]
+    },
+    {
+     "interface_name": "Te0/1/0/23",
+     "number_services": 2,
+     "services": [
+      {
+       "serviceIp": "66.1.13.1",
+       "serviceMac": "000a.b83b.2102"
+      },
+      {
+       "serviceIp": "66.1.13.2",
+       "serviceMac": "6c9c.ed6e.7473"
+      }
+     ]
+    },
+    {
+     "interface_name": "Gi0/0/0/0",
+     "number_services": 1,
+     "services": [
+      {
+       "serviceIp": "200.200.200.2",
+       "serviceMac": "6c9c.ed10.f7a0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vrf_name": "calo-mgmt",
+   "number_services": 0,
+   "number_interfaces": 2,
+   "enable_remote_pe": null,
+   "remote_pe": "",
+   "interfaces": [
+    {
+     "interface_name": "MgmtEth0/RSP1/CPU0/0",
+     "number_services": 0,
+     "services": []
+    },
+    {
+     "interface_name": "MgmtEth0/RSP0/CPU0/0",
+     "number_services": 0,
+     "services": []
+    }
+   ]
+  }
+ ]
+}

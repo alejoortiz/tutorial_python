@@ -1,0 +1,8 @@
+Value Interface (\S+)
+Value IP_Address (\S+)
+Value Required STATUS (\S+)
+Value Protocol (Up|Down)
+Value VRF_Name (\S+)
+
+Start
+  ^${Interface}\s+${IP_Address}\s+${STATUS}\s+${Protocol}\s+${VRF_Name} -> Record
