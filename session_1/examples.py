@@ -34,23 +34,21 @@ print(fibonacci(10))
 ### numeros primos ###
 
 num = 1
-while(num <= 30):
-    count = 0
+while num <= 30:
+    check = True
     i = 2
-    while(i <= num//2):
-        # print(f"Num={num} i={i} ({i}<=({num}//2)={i<=num//2}) ({num}%{i}==0)={num % i==0}")
-        if(num % i == 0):
-            count = count + 1
+    while i <= num//2:
+        if num % i == 0:
+            check = False
             break
         i = i + 1
-    if (count == 0 and num!= 1):
-        # print(f"Num={num} i={i} ({i}<=({num}//2)={i<=num//2}) ({num}%{i}==0)={num % i==0} PRIME")
+    if check == True and num != 1:
         print(num)
     num = num + 1
 
-array = [69,  7, 12, 11, 83]
-
 ### bubble sort ###
+
+array = [69,  7, 12, 11, 83]
 
 n = len(array)
 for i in range(n):
