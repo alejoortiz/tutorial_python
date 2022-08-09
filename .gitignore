@@ -138,3 +138,6 @@ session_2/test.json
 session_2/env
 session_2/10.192.65.121.txt
 session_2/10.192.65.122.txt
+
+# ignore .txt files
+*.txt

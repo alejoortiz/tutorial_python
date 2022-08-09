@@ -1,12 +1,13 @@
 from netmiko import ConnectHandler
 import os
 
-my_password = os.environ['SSH_PASSWORD']
+my_username = os.environ['CISCO_USERNAME']
+my_password =  os.environ['CISCO_PASSWORD']
 
 cisco = {
     "device_type": "cisco_xr",
-    "host": "10.192.65.121",
-    "username": "htts",
+    "host": "172.18.104.43",
+    "username": my_username,
     "password": my_password,
 }
 
@@ -15,5 +16,5 @@ with ConnectHandler(**cisco) as net_connect:
         'show arp', use_textfsm=True)
 
 for search in output:
-    if "Hundred" in search['interface'] and 'Dynamic' in search['state']:
+    if "TenGigE" in search['interface'] and 'Dynamic' in search['state']:
         print(search)

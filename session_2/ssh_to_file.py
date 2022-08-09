@@ -1,18 +1,20 @@
 from netmiko import ConnectHandler
 import os
 
-my_password = os.environ['SSH_PASSWORD']
+my_username = os.environ['CISCO_USERNAME']
+my_password =  os.environ['CISCO_PASSWORD']
+
 my_network = [
     {
         "device_type": "cisco_xr",
-        "host": "10.192.65.121",
-        "username": "htts",
+        "host": "172.18.104.43",
+        "username": my_username,
         "password": my_password,
     },
     {
         "device_type": "cisco_xr",
-        "host": "10.192.65.122",
-        "username": "htts",
+        "host": "172.18.104.58",
+        "username": my_username,
         "password": my_password,
     }
 ]

@@ -11,7 +11,7 @@ with open(template_path, 'r') as template:
 
 output_parse = template_object.ParseText(file_output)
 
-print(output_parse[0])
+# print(output_parse[0])
 
 for interface in output_parse:
     if interface[3] == 'Down':
